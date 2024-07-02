@@ -18,7 +18,7 @@ form.addEventListener("submit", (event) => {
 		localStorage.removeItem("username", username)
 		localStorage.removeItem("password", password)
 	}
-	alert(`Logged in as ${username}.`);
+	alert(`Logged in as ${username}`);
 	showButton();
 	form.reset();
 })
@@ -36,7 +36,7 @@ function loginAsSaved() {
 	const username = localStorage.getItem("username")
 	const password = localStorage.getItem("password")
 	if(username && password) {
-		alert(`Logged in as ${username}.`);
+		alert(`Logged in as ${username}`);
 	}
 }
 showButton();
