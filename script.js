@@ -39,4 +39,6 @@ function loginAsSaved() {
 		alert(`Logged in as ${username}.`);
 	}
 }
+showButton();
+
 existingButton.addEventListener('click', loginAsSaved)
